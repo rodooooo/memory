@@ -1,0 +1,7 @@
+READ 0 ... okay (page 0)
+READ 3fff - bfff ... okay (pages 0-2)
+READ 60000 - 77fff ... okay (pages 24-29)
+READ 5fff ... okay (page 1)
+WRITE 5fff ... okay (page 1)
+READ 7fff ... okay (page 1)
+WRITE 7fff ... okay (page 1)

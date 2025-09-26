@@ -1,0 +1,25 @@
+// Enter READ/WRITE commands into this file
+// READ <OPTIONAL number type: bin/hex/oct> <virtual memory address or random>
+// WRITE <OPTIONAL number type: bin/hex/oct> <virtual memory address or random>
+READ hex 0000 //1 pag 0
+//rango sengmento sin page fault Pag 0 a 2
+READ hex 3fff-bfff 1 
+//rango sengmento sin page fault inverso 29 a 24
+READ hex 60000-77fff
+//Normal
+READ hex 5fff
+WRITE hex 5fff
+READ hex 7fff
+WRITE hex 7fff
+READ hex ffff
+WRITE hex ffff
+//rango de segmento 2 a 3 Pag 5 a 10
+READ hex 17fff-2bfff
+WRITE hex 17fff-2bfff
+//rango de segmento inverso 4 a 3 Pag 18 a 13
+READ hex 4bfff-33fff
+WRITE hex 4bfff-33fff
+//Fuera del las 31 paginas o de rango pag50
+READ hex cbfff
+//rango fuera
+READ hex a0000-b4000
